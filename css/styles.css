@@ -89,7 +89,6 @@ body {
     -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
-    width: 100%;
 }
 
 .container .logo {
