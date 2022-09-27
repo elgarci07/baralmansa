@@ -1,11 +1,18 @@
 * {
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
     margin: 0;
     background-color: rgb(255, 255, 255);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .header {
@@ -38,15 +45,21 @@ body {
 }
 
 .two-column img {
-    width: 100%;
+    width: 60%;
+    border-radius: 15%;
+    padding: 10px;
 }
 
 .two-column h1 {
     font-size: 6vw;
 }
 
+.two-column h5 {
+    font-size: 4vw;
+}
+
 .two-column p {
-    font-size: 3vw;
+    font-size: 1vw;
 }
 
 .thirstline {
@@ -74,9 +87,29 @@ body {
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
+    border-radius: 15%;
 }
 
 .four-column p {
+    font-size: 1vw;
+}
+
+.five-column {
+    padding: 20px;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.five-column img {
+    background-color: #24eca4;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    border-radius: 15%;
+}
+
+.five-column p {
     font-size: 1vw;
 }
 
@@ -320,4 +353,62 @@ ul.slider li:target {
     height: 20px;
     font-size: 20px;
     border-radius: 100%;
+}
+
+
+/*SECCION DE CARTA*/
+
+.textoMiraCarta {
+    text-align: center;
+    color: #272727;
+}
+
+.descargaMenu {
+    text-decoration: none;
+    color: white;
+}
+
+.button-50 {
+    appearance: button;
+    background-color: #272727;
+    background-image: none;
+    border: 1px solid #272727;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #272727 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-50:focus {
+    text-decoration: none;
+}
+
+.button-50:hover {
+    text-decoration: none;
+}
+
+.button-50:active {
+    box-shadow: #272727 0 3px 5px inset;
+    outline: 0;
+}
+
+.button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #272727 2px 2px 0 1px;
+    transform: translate(2px, 2px);
 }
