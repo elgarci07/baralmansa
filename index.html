@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>BAR ALMANSA</title>
 </head>
@@ -21,14 +23,15 @@
         <div class="navbar">
 
             <div class="icon-bar" onclick="Show()">
-                <i></i>
-                <i></i>
-                <i></i>
+                <li><a href="#Bar">Bar</a></li>
+                <li><a href="#Horario">Horario</a></li>
+                <li><a href="#Carta">Carta</a></li>
+                <li><a href="#Mapa">Encuentranos</a></li>
             </div>
 
             <ul id="nav-lists">
                 <li class="close"><span onclick="Hide()">×</span></li>
-                <li><a href="#Bar">BAR</a></li>
+                <li><a href="#Bar">Bar</a></li>
                 <li><a href="#Horario">Horario</a></li>
                 <li><a href="#Carta">Carta</a></li>
                 <li><a href="#Mapa">Encuentranos</a></li>
@@ -39,55 +42,58 @@
 
     <!--header-->
 
-    <div class="one-column">
-        <h2> Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la buena música.</h2>
-    </div>
 
-    <!--Slider-->
-    <div class="one-column">
-        <div class="container">
-            <ul class="slider">
-                <li id="slide1">
-                    <img src="img/bar1.png" />
-                </li>
-                <li id="slide2">
-                    <img src="img/bar2.jpg" />
-                </li>
-                <li id="slide3">
-                    <img src="img/bar3.jpg" />
-                </li>
-            </ul>
-            <ul class="menu">
-                <li>
-                    <a href="#slide1">1</a>
-                </li>
-                <li>
-                    <a href="#slide2">2</a>
-                </li>
-                <li>
-                    <a href="#slide3">3</a>
-                </li>
-            </ul>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/bar1.jpg" style="width:100%">
+
         </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/bar2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/bar3.jpg" style="width:100%">
+
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
 
+    <div class="one-column" id="Bar">
+        <p>Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la buena música.
+        </p>
+    </div>
+
+
     <div class="one-column">
-        <h2> El concepto que nos hace únicos. La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la carta es el pan de receta patentada y que además se hornea en el momento en el que el cliente hace el pedido.
-        </h2>
+        <p> El concepto que nos hace únicos. La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la carta es el pan de receta patentada y que además se hornea en el momento en el que el cliente hace el pedido.
+        </p>
     </div>
 
     <div class="row" id="section-2">
         <div class="two-column">
-            <img src="img/horario.jpg" alt="Horario">
+            <img src="img/horario.jpg" id="Horario">
         </div>
         <div class="two-column">
-            <h5>Horario</h5>
             <p>Abrimos de martes a domingo</p>
             <p>Lunes cerrado</p>
         </div>
     </div>
 
-    <div class="textoMiraCarta">
+    <div class="textoMiraCarta" id="Carta">
         <h1>¡Échale un vistazo a la carta!</h1>
         <br>
         <button class="button-50" role="button"><a class="descargaMenu" href="Documents/Menu_Restaurante_Almansa.pdf" download="Menú Restaurante Almansa">CARTA</a></button>
@@ -95,29 +101,43 @@
 
     <div class="row" id="section-3">
         <div class="five-column">
-            <img src="img/plato1.png" alt="Nike">
+            <img src="img/plato1.jpg" alt="Tortilla">
         </div>
         <div class="five-column">
-            <img src="img/plato2.png" alt="Gatorade">
+            <img src="img/plato2.jpg" alt="Cocretas">
+        </div>
+        <div class="five-column">
+            <img src="img/plato6.jpg" alt="Barvas">
         </div>
         <div class="five-column" id="platinum-label">
-            <img src="img/plato3.jpg" alt="Virgin">
+            <img src="img/plato3.jpg" alt="Albondigas">
         </div>
         <div class="five-column">
-            <img src="img/plato4.jpg" alt="Boston City FC">
+            <img src="img/plato4.jpg" alt="Pulpo">
         </div>
         <div class="five-column">
-            <img src="img/plato4.jpg" alt="Boston City FC">
+            <img src="img/plato5.jpg" alt="Pa amb tomaquet">
         </div>
+
     </div>
 
-
-    <div class="one-column">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.7588280526556!2d2.2983792000000003!3d41.617726600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7d4b0974f17%3A0xe51745f0c1df7360!2sCarrer%20del%20Bosc%2C%2008521%20Bellavista%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1664300361079!5m2!1ses!2ses"
-            width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="one-column" id="Mapa">
+        <h2> ¡Encuentrános y ven a visitarnos!
+        </h2>
     </div>
 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.7588280526556!2d2.2983792000000003!3d41.617726600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7d4b0974f17%3A0xe51745f0c1df7360!2sCarrer%20del%20Bosc%2C%2008521%20Bellavista%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1664300361079!5m2!1ses!2ses"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    <a href="https://wa.me/34636925502/?text=Hola%20buenas,%20quiero%20reservar%20eldia..." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
 </body>
+
+<script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
 
 </html>

@@ -1,11 +1,9 @@
-< script >
     var navList = document.getElementById("nav-lists");
 
-function Show() {
-    navList.classList.add("_Menus-show");
-}
+    function Show() {
+        navList.classList.add("_Menus-show");
+    }
 
-function Hide() {
-    navList.classList.remove("_Menus-show");
-} <
-/script>
+    function Hide() {
+        navList.classList.remove("_Menus-show");
+    }
